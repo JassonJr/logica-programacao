@@ -3,11 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Página de lógica de programação</title>
 </head>
 <body>
-    <h1>Lógica de programação</h1>
-    <p>Página de lógica de programação</p>
+    <section class="wrapper">
+        <header class="header"><h1>Lógica de Programação</h1></header>
+        <form action="">
+            <div class="controle-form">
+                <label for="nota1">Nota 1:</label>
+                <input type="text" id="nota1">
+            </div>
+            <div class="controle-form">
+                <label for="nota2">Nota 2:</label>
+                <input type="text" id="nota2">
+            </div>
+            <div class="controle-form">
+                <label for="nota3">Nota 3:</label>
+                <input type="text" id="nota3">
+            </div>
+            <button type="button" onclick="mediaAluno()">Calcular nota</button>
+        </form>
+        <p id="result"></p>
+    </section>
     <script src="./script.js"></script>
 </body>
 </html>
